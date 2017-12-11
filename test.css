@@ -1,0 +1,231 @@
+body {
+    background-color: #989479;
+    margin:0}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #FCFAF8;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+    border:solid black 0.2px;
+}
+
+.active, .dot:hover {
+  background-color:#D9E4E6 ;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fading {
+  0% {opacity: .4} 
+  100% {opacity: 1}
+}
+
+@keyframes fading {
+  0% {opacity: .4} 
+  100% {opacity: 1}
+}
+@-webkit-keyframes sliding {
+  0% {width:0%} 
+    100% {width:100%;}
+}
+
+@keyframes sliding {
+  0% {width:0%} 
+    100% {width:100%;}
+}
+
+
+#DelhiSmog{
+    width:0%;
+    height:100%;
+    background-color: #008981;
+    position: fixed;
+    top:0%;
+    left:0%;
+    transition: 1.5s;    
+}
+#MumRain{
+    width:0%;
+    height:100%;
+    background-color: #008981;
+    position: fixed;
+    top:0%;
+    right:0%;
+    transition: 1.5s;    
+}
+
+#Tweet{
+    width:100%;
+    height:0%;
+    background-color: #008981;
+    position: fixed;
+    top:0%;
+    left:0%;
+    transition: 1.5s;    
+}
+.Mboxes{
+    width:70%;
+    height:80%;
+    position:relative;
+    left:15%;
+    top:7%;
+    border:solid #EF7196 1px;
+    border-radius: 10%;
+    -webkit-animation-name: fading;
+    -webkit-animation-duration: 1.8s;
+    animation-name: fading;
+    animation-duration: 1.8s;
+    background-color:#EF7196;
+}
+.Mimages{
+    width:100%;
+    height:80%;
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+.Mcontents{
+    width:100%;
+    height:20%;
+    position:absolute;
+    top:80%;
+    left:0%;
+    visibility: hidden;
+    font-size: 1.2em;
+    padding-top: 2%;
+    color: beige;
+    text-align: center;
+}
+
+.Tboxes{
+    width:70%;
+    height:80%;
+    position:relative;
+    left:15%;
+    top:7%;
+    border:solid #EF7196 1px;
+    border-radius: 10%;
+    -webkit-animation-name: fading;
+    -webkit-animation-duration: 1.8s;
+    animation-name: fading;
+    animation-duration: 1.8s;
+    background-color:#EF7196;
+}
+.Timages{
+    width:100%;
+    height:80%;
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+.Tcontents{
+    width:100%;
+    height:20%;
+    position:absolute;
+    top:80%;
+    left:0%;
+    visibility: hidden;
+    font-size: 1.2em;
+    padding-top: 2%;
+    text-align: center;
+    color: beige;
+}
+.boxes{
+    width:70%;
+    height:70%;
+    position:relative;
+    left:15%;
+    top:15%;
+    border:solid #EF7196 1px;
+    border-radius: 10%;
+    -webkit-animation-name: fading;
+    -webkit-animation-duration: 1.8s;
+    animation-name: fading;
+    animation-duration: 1.8s;
+    background-color:#EF7196;
+}
+.images{
+    width:100%;
+    height:80%;
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+.contents{
+    width:100%;
+    height:20%;
+    position:absolute;
+    top:80%;
+    left:0%;
+    visibility: hidden;
+        font-size: 1.2em;
+    padding:2%;
+    text-align: center;
+    color: beige;
+}
+#DDots{
+    position: absolute;
+    top:90%;
+    left:40%;
+    visibility: hidden;
+}
+#MDots{
+    position: absolute;
+    top:90%;
+    left:40%;
+    visibility: hidden;
+}
+#TDots{
+    position: absolute;
+    top:90%;
+    left:50%;
+    visibility: hidden;
+}
+.but{
+    background:#2B185C;
+    color:#CCA969;
+    width: 40%;
+    height:35%;
+    border-radius: 5%;
+    font-size: 3em;
+    position: fixed;
+    left:10%;
+    top:10%;
+}
+#clD{
+    color:#EF7196;
+    font-size: 4em;
+    position: absolute;
+    top:5%;
+    right:5%;
+    cursor: pointer;
+}
+#clM{
+    color:#EF7196;
+    font-size: 4em;
+    position: absolute;
+    top:5%;
+    right:0%;
+    cursor: pointer;
+    visibility: hidden;
+}
+#clT{
+    color:#EF7196;
+    font-size: 4em;
+    position: absolute;
+    top:5%;
+    right:0%;
+    cursor: pointer;
+    visibility: hidden;
+}

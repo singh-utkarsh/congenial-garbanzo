@@ -1,0 +1,161 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="test.css" type="text/css">
+</head>
+    <body>
+        
+    <button class="but" onclick="delhiVis()"> Air Pollution In Delhi/NCR </button>
+    <button class="but" onclick="mumbaiVis()" style="left:55%;"> Mumbai Rains </button>
+    <button class="but" onclick="TweetVis()" style="left:35%;top:50%;">NUMBER OF RETWEETS AND FAVORITE COUNTS</button>
+    <div id="DelhiSmog">
+        <span  onclick="closeDel()" id="clD">&times;</span>
+        <div class="boxes">
+            <img src="pics/smogcluster.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#DelhiSmog</i></span>
+        </div>
+        
+        <div class="boxes">
+            <img src="pics/smogcluster2.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#DelhiSmog</i></span>
+        </div>
+        
+        <div class="boxes">
+            <img src="pics/smog%20wordcloud.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#DelhiSmog</i></span>
+        </div>
+            
+            <div class="boxes">
+            <img src="pics/delhismog%20cluster%20dendrogram.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#DelhiSmog</i></span>
+        </div>
+            
+            <div class="boxes">
+            <img src="pics/delhismog%20cluster%20dendrogram%20(2).png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#DelhiSmog</i></span>
+        </div>
+            
+            <div class="boxes">
+            <img src="pics/delhismog%20wordcloud.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#DelhiSmog</i></span>
+        </div>
+            
+        <!-- #MyRightToBreathe -->
+        <div class="boxes">
+            <img src="pics/my%20right%20to%20breathe%20cluster%20dendrogram.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#MyRightToBreathe</i></span>
+        </div>
+        <div class="boxes">
+            <img src="pics/myrighttobreahte%20wordcloud.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#MyRightToBreathe</i></span>
+        </div>
+        <div class="boxes">
+            <img src="pics/myrighttobreathe%20cluster.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#MyRightToBreathe</i></span>
+        </div>
+            
+       <!-- #CropBurning -->
+        <div class="boxes">
+            <img src="pics/crop%20burning%20cluster%20dendrogram.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#CropBurning</i></span>
+        </div>
+        <div class="boxes">
+            <img src="pics/cropburning%20cluster%20dendrogram1.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#CropBurning</i></span>
+        </div>
+        <div class="boxes">
+            <img src="pics/cropburning%20wordcloud.png" class="images">
+            <span class="contents">Air Pollution In Delhi/NCR <br> <i style="color:red;font-weight:bold">#CropBurning</i></span>
+        </div>
+        <div style="text-align:center" id="DDots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+</div>
+<br>
+
+        
+        
+        
+        
+    <!-- ************MUMBAI************** -->
+    <div id="MumRain">
+        <span  onclick="closeMum()" id="clM">&times;</span>
+        <div class="Mboxes">
+            <img src="pics/mumbai/cycloneockhi%20wordcloud.png" class="Mimages">
+            <span class="Mcontents">Mumbai Rains <br> <i style="color:red;font-weight:bold">#CycloneOckhi</i></span>
+        </div>
+        
+        <div class="Mboxes">
+             <img src="pics/mumbai/cyclone%20cluster%20dendrogram%20(2).png" class="Mimages">
+            <span class="Mcontents">Mumbai Rains <br> <i style="color:red;font-weight:bold">#CycloneOckhi</i></span>
+        </div>
+        
+         <div class="Mboxes">
+             <img src="pics/mumbai/cyclone%20cluster%20dendrogram.png" class="Mimages">
+            <span class="Mcontents">Mumbai Rains <br> <i style="color:red;font-weight:bold">#CycloneOckhi</i></span>
+        </div>
+        
+        <div class="Mboxes">
+             <img src="pics/mumbai/mumbairains%20wordcloud.png" class="Mimages">
+            <span class="Mcontents">Mumbai Rains <br> <i style="color:red;font-weight:bold">#MumbaiRains</i></span>
+        </div>
+        
+         <div class="Mboxes">
+             <img src="pics/mumbai/mumbairains%20wordcloud1.png" class="Mimages">
+            <span class="Mcontents">Mumbai Rains <br> <i style="color:red;font-weight:bold">#MumbaiRains</i></span>
+        </div>
+        
+         <div class="Mboxes">
+             <img src="pics/mumbai/mumbai%20cluster%20dendrogram.png" class="Mimages">
+            <span class="Mcontents">Mumbai Rains <br> <i style="color:red;font-weight:bold">#MumbaiRains</i></span>
+        </div>
+        
+         <div class="Mboxes">
+             <img src="pics/mumbai/mumbairains%20cluster%20dendrogram.png" class="Mimages">
+            <span class="Mcontents">Mumbai Rains <br> <i style="color:red;font-weight:bold">#MumbaiRains</i></span>
+        </div>
+        
+        <div style="text-align:center" id="MDots">
+        <span class="dot" onclick="currentMSlide(1)"></span> 
+        <span class="dot" onclick="currentMSlide(2)"></span> 
+        <span class="dot" onclick="currentMSlide(3)"></span>
+        <span class="dot" onclick="currentMSlide(4)"></span>
+        <span class="dot" onclick="currentMSlide(5)"></span>
+        <span class="dot" onclick="currentMSlide(6)"></span>
+        <span class="dot" onclick="currentMSlide(7)"></span>
+        </div>
+    </div>
+        
+    <!-- NEW -->
+    <div id="Tweet">
+        <span  onclick="closeTwitt()" id="clT">&times;</span>
+        <div class="Tboxes">
+            <img src="pics/new/20171211013328.png" class="Timages">
+            <span class="Tcontents">Table</span>
+        </div>
+        
+        <div class="Tboxes">
+             <img src="pics/new/Capture.PNG" class="Timages" style="width:100%;height:30%;position:absolute;top:30%;left:0%;">
+            <span class="Tcontents">Graph</span>
+        </div>
+        
+        <div style="text-align:center" id="TDots">
+        <span class="dot" onclick="currentTSlide(1)"></span> 
+        <span class="dot" onclick="currentTSlide(2)"></span>
+        </div>
+    </div>
+        <script src="test.js">
+        </script>
+    </body>
+</html>
